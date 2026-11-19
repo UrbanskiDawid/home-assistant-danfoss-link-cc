@@ -1,0 +1,28 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Danfoss Link CC",
+        "description": "On the touch panel, add a new app/device; it shows a 9-digit code. Enter it here.",
+        "data": {
+          "code": "Pairing code"
+        }
+      }
+    },
+    "error": {
+      "pairing_failed": "Pairing failed. Check the code (it expires quickly) and try again with a new one."
+    },
+    "abort": {
+      "already_configured": "This panel is already configured."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "battery": { "name": "Battery" }
+    },
+    "sensor": {
+      "state": { "name": "State" },
+      "alarms": { "name": "Alarms" }
+    }
+  }
+}
